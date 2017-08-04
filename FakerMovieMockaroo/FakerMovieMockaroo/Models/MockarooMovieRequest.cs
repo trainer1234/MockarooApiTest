@@ -7,18 +7,17 @@ namespace FakerMovieMockaroo.Models
 {
     public class MockarooMovieRequest
     {
-        public int Count { get; set; }
-        public bool AlwaysArray { get; set; }
-        public List<Field> Movies { get; set; }
+        public List<MovieField> Fields { get; set; }
     }
 
-    public class Field
+    public class MovieField
     {
-        public string Name { get; set; }
-        public string Type { get; set; }
-        public string Min { get; set; }
-        public string Max { get; set; }
-        public string Symbol { get; set; }
-        public string Format { get; set; }
+        public string name { get; set; }
+        public string type { get; set; }
+        public string min { get; set; }
+        public string max { get; set; }
+        public string format { get; set; }
+        public string symbol { get; set; }
+        public int decimals { get; set; }
     }
 }

@@ -8,9 +8,10 @@ using FakerMovieMockaroo.Models;
 namespace FakerMovieMockaroo.Migrations
 {
     [DbContext(typeof(FakerMovieMockarooContext))]
-    partial class FakerMovieMockarooContextModelSnapshot : ModelSnapshot
+    [Migration("20170804165922_ModelChange")]
+    partial class ModelChange
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")

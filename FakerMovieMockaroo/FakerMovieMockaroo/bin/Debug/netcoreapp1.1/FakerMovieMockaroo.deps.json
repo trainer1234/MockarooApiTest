@@ -3770,7 +3770,7 @@
     "microsoft.aspnetcore.staticfiles/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-VaivagheDU8I250cTNetuTPnxzxkkYZK9OMOLXFfAJoGFgOaTBEQI6oGRKX4NS6BYWjoC/1vVZD6sOwsEoJcEA==",
+      "sha512": "sha512-JtfaHhKqhjZXvVfDUkpOwZJ9t/64v8MeGQ9Te+5GKajCUswv49DjZcS5oF8qu8kqv35eeTYmhOWd0VxIu6rGXQ==",
       "path": "microsoft.aspnetcore.staticfiles/1.1.2",
       "hashPath": "microsoft.aspnetcore.staticfiles.1.1.2.nupkg.sha512"
     },
@@ -3819,21 +3819,21 @@
     "microsoft.entityframeworkcore.design/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-lVPV+8CHzrgpB+FCn3Xt1luktV46u5DHMaP22BBheB+ulwCtWmuXVFywrdMlskhV50ODIxgg3wnf5EuVtOHLvQ==",
+      "sha512": "sha512-TFbj0fFE5BWJptL0BKhYOED0QOqY4VxApeLn8r9q8cINxyEj0XgjORl/a3Cp96CeASE5zsQeyMwaQCBRH+roag==",
       "path": "microsoft.entityframeworkcore.design/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.design.1.1.2.nupkg.sha512"
     },
     "microsoft.entityframeworkcore.relational/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-qZILp9dq/GSmn0MwsvQ/MrCuO67iOZ4jpBPqAk7eo+GA+kspWj1Knl1yt4l0mj4erYEJfzr2X4+rk/b0HBbH7Q==",
+      "sha512": "sha512-oiPXaIMk8cPbEmtcChzhPzM1ZyEYMoy8sMYWgWfv292Q0e0U2v7CIrtGylrORVZOA4lb9M0gWjbfKPtj7iDbxA==",
       "path": "microsoft.entityframeworkcore.relational/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.relational.1.1.2.nupkg.sha512"
     },
     "microsoft.entityframeworkcore.relational.design/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-6NM4t1dPPTOSlmoFu6cKMP6MUZ7rguHJ+8fZ/cwKjZml68/iRXpsi6nxNnWw95GfTRh6n2rcd9BoJgOxX91mNw==",
+      "sha512": "sha512-pu2Jxndzv3slY6Ch9mdqVfL3AFhH5XzM02Rrnf9h5lKoViprYx1O+nNqT3BxmGrPkYadY9OddG2b9+sUO3Xuzw==",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.2",
       "hashPath": "microsoft.entityframeworkcore.relational.design.1.1.2.nupkg.sha512"
     },
@@ -3854,7 +3854,7 @@
     "microsoft.entityframeworkcore.tools/1.1.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-dEBd1pjxp78uOIH/sXcKVd3S30vlETenYzrAlqSwHJ/3nEhw+lmlqe6WlQ+kSKRKslgrLjAQQcwvSFeUlvlsiw==",
+      "sha512": "sha512-nT63J9eTmK9WvVJASiPt9qbKkgNFhrPkWh9ar/t1c8kMXO969j+GO/PW39NsjfPooE9WuHrCg9vGJMKf4HtzmA==",
       "path": "microsoft.entityframeworkcore.tools/1.1.1",
       "hashPath": "microsoft.entityframeworkcore.tools.1.1.1.nupkg.sha512"
     },
@@ -4078,7 +4078,7 @@
     "microsoft.visualstudio.web.browserlink/1.1.2": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-ZXNvHo0jLRk81TXjUKKPuBgUD5nmQ+KB2YMvonX3mh9CoAWOrnFfFpm+CHnds9LOHAT2xGvBC502wSdo24GgvQ==",
+      "sha512": "sha512-QOu+6RH3j+ncittuC5iZNAhOWyYy1BqVb7KPzeRk/s94Yl23+TOUqzH7NBdchObenhGqmFXT654VJEdSF1JERQ==",
       "path": "microsoft.visualstudio.web.browserlink/1.1.2",
       "hashPath": "microsoft.visualstudio.web.browserlink.1.1.2.nupkg.sha512"
     },
@@ -4204,7 +4204,7 @@
     "system.data.common/4.3.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-RSpNZQMsMTGNWjrfpGKRi7ZUiwPvV7te5fwCohtbprKolUoyAiw8HUgCPgWQ0thRBwhs/R+v/r6X3cibCcBUPA==",
+      "sha512": "sha512-lm6E3T5u7BOuEH0u18JpbJHxBfOJPuCyl4Kg1RH10ktYLp5uEEE1xKrHW56/We4SnZpGAuCc9N0MJpSDhTHZGQ==",
       "path": "system.data.common/4.3.0",
       "hashPath": "system.data.common.4.3.0.nupkg.sha512"
     },

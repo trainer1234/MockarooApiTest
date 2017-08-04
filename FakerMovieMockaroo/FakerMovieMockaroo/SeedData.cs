@@ -25,7 +25,9 @@ namespace FakerMovieMockaroo
                     return;
                 }
 
-                context.Add()
+                var result = GetRandomMovie();
+                List<Movie> generatedMovies = result.Result;
+                context.AddRange(generatedMovies);
 
                 context.SaveChanges();
             }
@@ -33,39 +35,43 @@ namespace FakerMovieMockaroo
 
         public static async Task<List<Movie>> GetRandomMovie()
         {
-            MockarooMovieRequest request = new MockarooMovieRequest()
-            {
-                Count = 10,
-                AlwaysArray = true,
-                Movies = new List<Field>()
-            };
+            MockarooMovieRequest request = new MockarooMovieRequest();
 
-            request.Movies.Add(new Field { Name = "movieTitle", Type = "Movie Title" });
-            request.Movies.Add(new Field { Name = "releaseDate", Type = "Date", Min = "1/1/1900", Max = "1/1/2100", Format = "%d/%m/%y" });
-            request.Movies.Add(new Field { Name = "genre", Type = "Movie Genre" });
-            request.Movies.Add(new Field { Name = "price", Type = "Money", Symbol = "random"});
+            request.Fields = new List<MovieField>();
+            request.Fields.Add(new MovieField() { name = "Title", type = "Movie Title" });
+
+            request.Fields.Add(new MovieField() { name = "ReleaseDate", type = "Date", min = "1/1/1900", max = "1/1/2050", format = "%m/%d/%Y" });
+            request.Fields.Add(new MovieField() { name = "Genre", type = "Movie Genres" });
+            request.Fields.Add(new MovieField() { name = "Price", type = "Number", decimals = 2, min = "1", max = "1000000000"});
+            request.Fields.Add(new MovieField() { name = "Currency", type = "Currency" });
+
+            var entitiesJson = new List<object>();
+            for(int i = 0; i < request.Fields.Count; i++)
+            {
+                entitiesJson.Add(request.Fields[i]);
+            }
 
             using (var client = new HttpClient())
             {
                 try
                 {
-                    HttpClient http = new HttpClient();
-                    http.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                    string postBody = JsonConvert.SerializeObject(request);
-                    client.BaseAddress = new Uri("https://mockaroo.com/api/generate.json?key=a7d78710");
-                    var response = await client.PostAsync($"&fields=", new StringContent(postBody, Encoding.UTF8));
+                    client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+
+                    string postBody = JsonConvert.SerializeObject(entitiesJson);
+
+                    client.BaseAddress = new Uri("https://mockaroo.com/api/generate.json?key=a7d78710&count=1000&array=true");
+                    var content = new StringContent(postBody, Encoding.UTF8, "application/json");
+                    var response = await client.PostAsync(client.BaseAddress, content);
                     response.EnsureSuccessStatusCode();
 
                     var stringResult = await response.Content.ReadAsStringAsync();
-                    var rawMovie = JsonConvert.DeserializeObject<MockarooMovieRequest>(stringResult);
-
-                    List
-
-                    return new OkObjectResult(rawMovie);
+                    var rawMovie = JsonConvert.DeserializeObject<List<Movie>>(stringResult);
+                    
+                    return rawMovie;
                 }
                 catch(HttpRequestException httpRequestException)
                 {
-                    return "Error generating random movie";
+                    throw;
                 }
             }
         }

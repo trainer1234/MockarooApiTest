@@ -8,9 +8,10 @@ using FakerMovieMockaroo.Models;
 namespace FakerMovieMockaroo.Migrations
 {
     [DbContext(typeof(FakerMovieMockarooContext))]
-    partial class FakerMovieMockarooContextModelSnapshot : ModelSnapshot
+    [Migration("20170804131836_InitialCreate")]
+    partial class InitialCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
@@ -21,11 +22,9 @@ namespace FakerMovieMockaroo.Migrations
                     b.Property<int>("ID")
                         .ValueGeneratedOnAdd();
 
-                    b.Property<string>("CurrencyName");
-
                     b.Property<string>("Genre");
 
-                    b.Property<decimal>("Price");
+                    b.Property<int>("Price");
 
                     b.Property<DateTime>("ReleaseDate");
 
