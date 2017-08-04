@@ -1,0 +1,9 @@
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.deps.json
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.runtimeconfig.json
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.runtimeconfig.dev.json
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.dll
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.csprojResolveAssemblyReference.cache
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.AssemblyInfo.cs
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.pdb
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.dll
+C:\Users\dell\Documents\Visual Studio 2017\Projects\TestFaker\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.pdb
