@@ -27,6 +27,17 @@ namespace FakerMovieMockaroo
 
                 var result = GetRandomMovie();
                 List<Movie> generatedMovies = result.Result;
+                List<string> movieRatings = new List<string>()
+                {
+                    "R", "PG", "16+", "18+", "40+"
+                };
+
+                Random rnd = new Random();
+                foreach (Movie movie in generatedMovies)
+                {
+                    movie.Rating = movieRatings[rnd.Next(movieRatings.Count)];
+                }
+
                 context.AddRange(generatedMovies);
 
                 context.SaveChanges();
@@ -42,11 +53,11 @@ namespace FakerMovieMockaroo
 
             request.Fields.Add(new MovieField() { name = "ReleaseDate", type = "Date", min = "1/1/1900", max = "1/1/2050", format = "%m/%d/%Y" });
             request.Fields.Add(new MovieField() { name = "Genre", type = "Movie Genres" });
-            request.Fields.Add(new MovieField() { name = "Price", type = "Number", decimals = 2, min = "1", max = "1000000000"});
+            request.Fields.Add(new MovieField() { name = "Price", type = "Number", decimals = 2, min = "1", max = "1000000000" });
             request.Fields.Add(new MovieField() { name = "Currency", type = "Currency" });
 
             var entitiesJson = new List<object>();
-            for(int i = 0; i < request.Fields.Count; i++)
+            for (int i = 0; i < request.Fields.Count; i++)
             {
                 entitiesJson.Add(request.Fields[i]);
             }
@@ -66,10 +77,10 @@ namespace FakerMovieMockaroo
 
                     var stringResult = await response.Content.ReadAsStringAsync();
                     var rawMovie = JsonConvert.DeserializeObject<List<Movie>>(stringResult);
-                    
+
                     return rawMovie;
                 }
-                catch(HttpRequestException httpRequestException)
+                catch (HttpRequestException httpRequestException)
                 {
                     throw;
                 }

@@ -16,3 +16,12 @@ D:\kha_giai_minh\VS_Project\Web_API_NetCore_Project\MockarooApiTest\FakerMovieMo
 D:\kha_giai_minh\VS_Project\Web_API_NetCore_Project\MockarooApiTest\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.dll
 D:\kha_giai_minh\VS_Project\Web_API_NetCore_Project\MockarooApiTest\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.pdb
 D:\kha_giai_minh\VS_Project\Web_API_NetCore_Project\MockarooApiTest\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.csproj.CoreCompileInputs.cache
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.deps.json
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.runtimeconfig.json
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.runtimeconfig.dev.json
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.dll
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\bin\Debug\netcoreapp1.1\FakerMovieMockaroo.pdb
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.AssemblyInfo.cs
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.dll
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.pdb
+F:\IT\MockarooTestAPI\FakerMovieMockaroo\FakerMovieMockaroo\obj\Debug\netcoreapp1.1\FakerMovieMockaroo.csprojResolveAssemblyReference.cache
